@@ -1,4 +1,4 @@
-package org.example;
+package org.rubtsov;
 
 public class UserRepositoryTest {
 }
