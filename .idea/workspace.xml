@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae090df1-4626-4e08-994c-b97e3fc4c744" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/UserRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/UserServiceTest.java" afterDir="false" />
+    <list default="true" id="ae090df1-4626-4e08-994c-b97e3fc4c744" name="Changes" comment="HW Mockito Test. Wrote the model and service.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rubtsov/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rubtsov/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rubtsov/service/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rubtsov/service/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rubtsov/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/rubtsov/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/rubtsov/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/rubtsov/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/rubtsov/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/rubtsov/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -42,14 +41,104 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/гыук/IdeaProjects/MockTeam&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="JUnit.UserRepositoryTest">
+    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW_MockitoTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.rubtsov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.rubtsov" />
+      <option name="MAIN_CLASS_NAME" value="org.rubtsov.UserRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW_MockitoTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.rubtsov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.rubtsov" />
+      <option name="MAIN_CLASS_NAME" value="org.rubtsov.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.addingNotUniqueUserThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW_MockitoTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.rubtsov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.rubtsov" />
+      <option name="MAIN_CLASS_NAME" value="org.rubtsov.UserServiceTest" />
+      <option name="METHOD_NAME" value="addingNotUniqueUserThrowsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.addingUserWithNullPasswordThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW_MockitoTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.rubtsov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.rubtsov" />
+      <option name="MAIN_CLASS_NAME" value="org.rubtsov.UserServiceTest" />
+      <option name="METHOD_NAME" value="addingUserWithNullPasswordThrowsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.whenUniqueUserIsAddedThenCreatNewUserIsCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW_MockitoTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.rubtsov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.rubtsov" />
+      <option name="MAIN_CLASS_NAME" value="org.rubtsov.UserServiceTest" />
+      <option name="METHOD_NAME" value="whenUniqueUserIsAddedThenCreatNewUserIsCalled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserRepositoryTest" />
+        <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.UserServiceTest.whenUniqueUserIsAddedThenCreatNewUserIsCalled" />
+        <item itemvalue="JUnit.UserServiceTest.addingNotUniqueUserThrowsException" />
+        <item itemvalue="JUnit.UserServiceTest.addingUserWithNullPasswordThrowsException" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,8 +147,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675529040666</updated>
-      <workItem from="1675529045773" duration="1729000" />
+      <workItem from="1675529045773" duration="6753000" />
+      <workItem from="1675590501984" duration="12566000" />
+      <workItem from="1675682458899" duration="121000" />
+      <workItem from="1675690804039" duration="8699000" />
+      <workItem from="1675753612363" duration="4137000" />
+      <workItem from="1675760238314" duration="9151000" />
+      <workItem from="1675770778174" duration="128000" />
+      <workItem from="1675777877037" duration="3093000" />
     </task>
+    <task id="LOCAL-00001" summary="Start doing HW Mockito Test.">
+      <created>1675531980972</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675531980973</updated>
+    </task>
+    <task id="LOCAL-00002" summary="HW Mockito Test. Wrote the model and service.">
+      <created>1675536785337</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675536785337</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,5 +186,18 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Start doing HW Mockito Test." />
+    <MESSAGE value="HW Mockito Test. Wrote the model and service." />
+    <option name="LAST_COMMIT_MESSAGE" value="HW Mockito Test. Wrote the model and service." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HW_MockitoTest$UserServiceTest.ic" NAME="UserServiceTest Coverage Results" MODIFIED="1675780322856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.rubtsov.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW_MockitoTest$UserRepositoryTest.ic" NAME="UserRepositoryTest Coverage Results" MODIFIED="1675697843992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.rubtsov.*</FILTER>
+    </SUITE>
   </component>
 </project>
