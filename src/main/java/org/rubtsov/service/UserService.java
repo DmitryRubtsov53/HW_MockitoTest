@@ -13,8 +13,8 @@ public class UserService {
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
-    public List<String> getListAllLogins (List<User> userList) {
-        return userList.stream()
+    public List<String> getListAllLogins () {
+        return userRepository.getAllUsers().stream()
                 .map(User::getLogin)
                 .collect(Collectors.toList());
     }
@@ -32,20 +32,13 @@ public class UserService {
                 .anyMatch(e -> e.equals(user));
 
         if (userExist) {
-            throw new UserNonUniqueException("User already exist");
+            throw new UserNonUniqueException("User already exists");
         }
         this.userRepository.addUser(user);
     }
-    public boolean loginOfUser (String login, String password) {
-        User user = new User(login, password);
-        boolean userExist = this.userRepository
-                .getAllUsers()
-                .stream()
-                .anyMatch(e -> e.equals(user));
-        if (userExist) {
-            return true;
-        }
-        return false;
+
+    public boolean userWithSuchLoginPasswordIsExists(String login, String password) {
+        return userRepository.findUserByLoginPassword(login, password).isPresent();
     }
 
 }
